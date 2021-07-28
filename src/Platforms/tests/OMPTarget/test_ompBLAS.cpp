@@ -97,13 +97,13 @@ void test_gemv_batched(const int N, const char trans, const int batch_count)
   std::vector<vec_t> Ds;
   Vector<T*, OMPallocator<T*>> Dptrs;
 
-  /*
+  
   // Change N to batch size
   Aptrs.resize(batch_count);
   Bptrs.resize(batch_count);
   Cptrs.resize(batch_count);
   Dptrs.resize(batch_count);
-  */
+  
   /*
   // Fill data
   for(int batch = 0; batch < batch_count; batch++)
